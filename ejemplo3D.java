@@ -606,25 +606,51 @@ rE.setText(c);
         Vector3f vectorVista1 = new Vector3f(3.9f,0.8f,-0.5f);
         mundo.transladarVista(vectorVista1,0f,Math.PI/6.0f,0f);
     }//GEN-LAST:event_BotonIsometricaActionPerformed
-
+private int l=0;
     private void rotarmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rotarmActionPerformed
-        // Comunicacion serial 
-        String r;
- Integer a = Integer.parseInt( elevar.getText());
- 
+       // Comunicacion serial 
+        String r,b;
+ Integer a = Integer.parseInt( rotar.getText());
+
+ if (a<=360){
+      l=a;
       r= "R|" + rotar.getText()+"|";
        rR.setText(r);
+        coutn =0;  coutn1=0;
+      
+ }
+ else {
+r=""+ l ;
+       rotar.setText(r);
+          b= "ERROR";
+       rR.setText(b);
         coutn =0;  coutn1=0;
         
     }//GEN-LAST:event_rotarmActionPerformed
 
     private void elevarmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_elevarmActionPerformed
 // Comunicacion serial  
-        String r;
+    
+        String r,b;
+ Integer a = Integer.parseInt( elevar.getText());
+
+
+   if (a<=45){
+      l=a;
       r= "E|" + elevar.getText()+"|";
        rE.setText(r);
-             contadorE=0;
-  contadorE2=0;
+        coutn =0;  coutn1=0;
+      
+ }
+ else {
+r=""+ l ;
+      elevar.setText(r);
+          b= "ERROR";
+       rE.setText(b);
+        coutn =0;  coutn1=0;
+ }
+    }                                       
+
     }//GEN-LAST:event_elevarmActionPerformed
 
     private void rotarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rotarActionPerformed
