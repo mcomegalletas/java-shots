@@ -625,7 +625,7 @@ r=""+ l ;
           b= "ERROR";
        rR.setText(b);
         coutn =0;  coutn1=0;
-        
+ }
     }//GEN-LAST:event_rotarmActionPerformed
 
     private void elevarmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_elevarmActionPerformed
@@ -647,10 +647,8 @@ r=""+ l ;
       elevar.setText(r);
           b= "ERROR";
        rE.setText(b);
-        coutn =0;  coutn1=0;
+        coutn =0;  coutn1=0;                                   
  }
-    }                                       
-
     }//GEN-LAST:event_elevarmActionPerformed
 
     private void rotarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rotarActionPerformed
